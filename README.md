@@ -3,5 +3,5 @@
 ## Script
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Korygon/Korygon-Hub/main/source.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/irlng/UntitleTagGame/main/ESP.lua", true))()
 ```
