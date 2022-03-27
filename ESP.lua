@@ -1,5 +1,3 @@
-if game.PlaceId ~= 8365905206 then return end
-
 function SendWarn(msg)
 	local msgs = "[Exploit] : \"" .. tostring(msg) .. "\"."
 	warn(msgs)
@@ -79,6 +77,23 @@ local function CreateESP(plr : Player)
 			if plr.PlayerRole.Value == "" or plr.PlayerRole.Value == nil then
 				plr.Character.HumanoidRootPart.ESP.Color3 = _G.RoleColors.NoRole
 			end
+			
+			
+			if plr.PlayerRole.Value == "RedTeam" then
+				plr.Character.HumanoidRootPart.ESP.Color3 = _G.RoleColors.RedTeam
+			end
+			
+			if plr.PlayerRole.Value == "BlueTeam" then
+				plr.Character.HumanoidRootPart.ESP.Color3 = _G.RoleColors.BlueTeam
+			end
+			
+			if plr.PlayerRole.Value == "YellowTeam" then
+				plr.Character.HumanoidRootPart.ESP.Color3 = _G.RoleColors.YellowTeam
+			end
+			
+			if plr.PlayerRole.Value == "GreenTeam" then
+				plr.Character.HumanoidRootPart.ESP.Color3 = _G.RoleColors.GreenTeam
+			end
 
 		else
 			local ESP = Instance.new("BoxHandleAdornment")
@@ -143,6 +158,23 @@ local function CreateESP(plr : Player)
 
 			if plr.PlayerRole.Value == "" or plr.PlayerRole.Value == nil then
 				ESP.Color3 = _G.RoleColors.NoRole
+			end
+			
+			
+			if plr.PlayerRole.Value == "RedTeam" then
+				ESP.Color3 = _G.RoleColors.RedTeam
+			end
+
+			if plr.PlayerRole.Value == "BlueTeam" then
+				ESP.Color3 = _G.RoleColors.BlueTeam
+			end
+
+			if plr.PlayerRole.Value == "YellowTeam" then
+				ESP.Color3 = _G.RoleColors.YellowTeam
+			end
+
+			if plr.PlayerRole.Value == "GreenTeam" then
+				ESP.Color3 = _G.RoleColors.GreenTeam
 			end
 		end
 	end)
