@@ -1,3 +1,5 @@
+if game.PlaceId ~= 8365905206 then return end
+
 function SendWarn(msg)
 	local msgs = "[Exploit] : \"" .. tostring(msg) .. "\"."
 	warn(msgs)
